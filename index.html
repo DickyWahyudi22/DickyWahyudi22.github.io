@@ -1,173 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>CV Dicky Wahyudi</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #007e1b50;
-      margin: 0;
-      padding: 0;
-    }
-
-.container {
-  max-width: 900px;
-  margin: 100px auto;
-  background-color: #fefffe3b;
-  border-radius: 10px;
-  padding: 60px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-a {
-  text-align: center;
-  color: #1d72c2f6;
-  transform: translateZ(50px);
-}
-h1 {
-  text-align: center;
-  color: #131212;
-  transform: translateZ(50px);
-}
-
-h3 {
-  text-align: center;
-  color: #333;
-  transform: translateZ(10px);
-}
-
-.profile-pic {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transform: translateZ(50px);
-}
-
-.cv-image {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 800px;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transform: translateZ(50px);
-}
-
-.cv-image:nth-child(1) {
-  margin-bottom: 20px;
-}
-
-.info {
-  margin-top: 30px;
-  transform: translateZ(50px);
-}
-
-.info p {
-  color: #3f3d3d;
-  line-height: 1.5;
-}
-
-.info p span {
-  font-weight: bold;
-  color: #333;
-}
-
-.clock {
-  text-align: center;
-  margin-top: 30px;
-  transform: translateZ(50px);
-}
-
-.clock h2 {
-  font-size: 36px;
-  color: #333;
-  margin: 0;
-  transform: translateZ(50px);
-}
-
-.clock p {
-  
-  font-size: 50px;
-  color: #424141;
-  margin: 0;
-  transform: translateZ(50px);
-}
-
-/* Parallax */
-.parallax-container {
-  perspective: 1000px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  position: relative;
-}
-
-.parallax-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform-style: preserve-3d;
-  transform: translateZ(-50px) scale(1.5);
-}
-
-.parallax-content {
-  position: relative;
-  z-index: 1;
-  padding: 30px;
-  background-color: #fefffe3b;
-  border-radius: 10px;
-  margin-top: 100px;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga Jasa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+        }
+        header {
+            background-color: #1b5e20; /* Hijau lebih gelap yang sama dengan footer */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+        }
+        h1 {
+            color: white ; /* Hijau lebih gelap */
+	}
+	h2 {
+            color: black ; /* Hijau lebih gelap */
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 10px auto;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #1b5e20; /* Hijau lebih gelap yang sama dengan header dan footer */
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .service-table {
+            margin-bottom: 20px;
+        }
+        .link-table {
+            display: inline-block;
+            margin: 5px auto; /* Mengurangi jarak antara tabel dan link */
+        }
+        .link-table th, .link-table td {
+            padding: 8px;
+            text-align: left;
+        }
+        .link-table th {
+            background-color: #1b5e20; /* Hijau lebih gelap */
+            color: white;
+        }
+        .link-table td {
+            background-color: #e9f7e9;
+        }
+        footer {
+            background-color: #1b5e20; /* Hijau lebih gelap */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        a {
+            color: #2196F3; /* Biru untuk link */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <div class="parallax-container">
-    <div class="parallax-bg" style="background-image: url('fot-profil.jpg');"></div>
-    <div class="parallax-content">
-      <div class="container">
-        <h1>Curriculum Vitae</h1>
-       <!-- <img class="profile-pic" src="img/foto-profil.jpg" alt="Foto Profil">-->
-       <P><img class="cv-image" src="1.png" alt="Lembar CV 1">
-       <img class="cv-image" src="2.png" alt="Lembar CV 2"></P>
-       <div class="info">
-         <!-- <p><span>Nama:</span> Dicky Wahyudi</p>
-          <p><span>Umur:</span> 21 Tahun</p>
-          <p><span>Alamat:</span> Jl. Dusun, Deli Serdang</p>
-          <p><span>Email:</span> dickyywahyyudi22@gmail.com</p>
-        </div>
-        <div class="clock">
-          <h2>Jam Terkini</h2>
-          <p id="clock"></p>
-        </div>-->
-      </div>
-      <h3>
-        <em><a href="https://www.facebook.com/dickylugu/" target="_blank">Facebook</a>
-        <p><a href="https://github.com/DickyWahyudi22/power-supply-multifungsi.github.io" target="_blank">GitHub</a></p></em>
-      </h3>
+
+<header>
+    <h1>Daftar Harga Jasa</h1>
+</header>
+
+<main>
+    <h2>1. Jasa Pembuatan Project Arduino dan IoT</h2>
+    <table class="service-table">
+        <tr>
+            <th>Paket</th>
+            <th>Deskripsi</th>
+            <th>Estimasi Harga</th>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td>Pembuatan proyek sederhana dengan Arduino dan IoT. Termasuk satu sensor dan satu perangkat output.</td>
+            <td>Rp 1.500.000</td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td>Pembuatan proyek dengan lebih dari satu sensor dan perangkat output. Penggunaan modul WiFi/Bluetooth dan integrasi aplikasi dasar.</td>
+            <td>Rp 3.000.000</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>Proyek kompleks dengan berbagai sensor, output, dan integrasi aplikasi mobile/web. Penggunaan protokol komunikasi (MQTT, HTTP) dan fitur tambahan.</td>
+            <td>Rp 5.000.000</td>
+        </tr>
+    </table>
+    <div class="link-table">
+        <table>
+            <tr>
+                <th>Link Deskripsi</th>
+            </tr>
+            <tr>
+                <td><a href="#" target="_blank">Deskripsi Jasa Arduino & IoT</a></td>
+            </tr>
+        </table>
     </div>
-  </div>
-  <script>
-    function updateClock() {
-      var now = new Date();
-      var hours = now.getHours();
-      var minutes = now.getMinutes();
-      var seconds = now.getSeconds();
 
-  var time = hours + ":" + minutes + ":" + seconds;
-  document.getElementById("clock").textContent = time;
-}
+    <h2>2. Jasa Pembuatan Website dan Aplikasi</h2>
+    <table class="service-table">
+        <tr>
+            <th>Paket</th>
+            <th>Deskripsi</th>
+            <th>Estimasi Harga</th>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td>Website statis atau aplikasi sederhana dengan tampilan dasar.</td>
+            <td>Rp 2.000.000</td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td>Website dinamis dengan fitur-fitur seperti form, galeri, atau login. Aplikasi dengan beberapa halaman dan fungsionalitas.</td>
+            <td>Rp 4.000.000</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>Website profesional atau aplikasi kompleks dengan fitur lengkap, seperti e-commerce, database, dan integrasi API.</td>
+            <td>Rp 7.500.000</td>
+        </tr>
+    </table>
+    <div class="link-table">
+        <table>
+            <tr>
+                <th>Link Deskripsi</th>
+            </tr>
+            <tr>
+                <td><a href="#" target="_blank">Deskripsi Jasa Website & Aplikasi</a></td>
+            </tr>
+        </table>
+    </div>
 
-setInterval(updateClock, 1000);
-  </script>
+    <h2>3. Jasa Lolos Plagiarism</h2>
+    <table class="service-table">
+        <tr>
+            <th>Paket</th>
+            <th>Deskripsi</th>
+            <th>Estimasi Harga</th>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td>Pemeriksaan plagiarism untuk dokumen pendek (hingga 5 halaman).</td>
+            <td>Rp 500.000</td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td>Pemeriksaan untuk dokumen menengah (hingga 15 halaman) dan revisi laporan.</td>
+            <td>Rp 1.000.000</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>Pemeriksaan untuk dokumen panjang (>15 halaman) dengan analisis mendalam dan perbaikan komprehensif.</td>
+            <td>Rp 1.500.000</td>
+        </tr>
+    </table>
+    <div class="link-table">
+        <table>
+            <tr>
+                <th>Link Deskripsi</th>
+            </tr>
+            <tr>
+                <td><a href="#" target="_blank">Deskripsi Jasa Lolos Plagiarism</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>4. Jasa Pembuatan Tugas Akhir</h2>
+    <table class="service-table">
+        <tr>
+            <th>Paket</th>
+            <th>Deskripsi</th>
+            <th>Estimasi Harga</th>
+        </tr>
+        <tr>
+            <td>Basic</td>
+            <td>Pembuatan tugas akhir dengan bantuan penulisan dan struktur dasar. Termasuk penelitian literatur.</td>
+            <td>Rp 2.500.000</td>
+        </tr>
+        <tr>
+            <td>Standard</td>
+            <td>Pembuatan tugas akhir dengan analisis data dan pembuatan prototype atau studi kasus.</td>
+            <td>Rp 5.000.000</td>
+        </tr>
+        <tr>
+            <td>Premium</td>
+            <td>Pembuatan tugas akhir dengan analisis mendalam, eksperimen, dan pembuatan prototype yang lengkap, serta panduan presentasi.</td>
+            <td>Rp 8.000.000</td>
+        </tr>
+    </table>
+    <div class="link-table">
+        <table>
+            <tr>
+                <th>Link Deskripsi</th>
+            </tr>
+            <tr>
+                <td><a href="#" target="_blank">Deskripsi Jasa Pembuatan Tugas Akhir</a></td>
+            </tr>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Jasa Pembuatan Proyek & Tugas Akhir</p>
+</footer>
+
 </body>
 </html>
